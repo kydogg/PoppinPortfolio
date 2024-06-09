@@ -1,7 +1,6 @@
-import type { Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
-const config: Config = {
+module.exports = {
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,5 +23,3 @@ const config: Config = {
 	},
 	plugins: [],
 };
-
-export default config;
